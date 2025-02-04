@@ -9,43 +9,43 @@ if (!isset($_SESSION["user_nombre"])) {
 
   if ($_SESSION['configuracion'] == 1) {
 
-    require_once "../modelos/Categoria_incidencia.php";
+    require_once "../modelos/Tours_turno.php";
 
-    $categoria_incidencia = new Categoria_incidencia();
+    $tours_turno = new Tours_turno();
 
-    $idincidencia_categoria  = isset($_POST["idincidencia_categoria"]) ? limpiarCadena($_POST["idincidencia_categoria"]) : "";
-    $nombre_inc             = isset($_POST["nombre_inc"]) ? limpiarCadena($_POST["nombre_inc"]) : "";
+    $idtours_turno  = isset($_POST["idtours_turno"]) ? limpiarCadena($_POST["idtours_turno"]) : "";
+    $nombre_turno   = isset($_POST["nombre_turno"]) ? limpiarCadena($_POST["nombre_turno"]) : "";
 
 
     switch ($_GET["op"]) {
-      case 'guardar_y_editar_inc':
-        if (empty($idincidencia_categoria)) {
-          $rspta = $categoria_incidencia->insertar($nombre_inc);
+      case 'guardar_y_editar_turno':
+        if (empty($idtours_turno)) {
+          $rspta = $tours_turno->insertar($nombre_turno);
           echo json_encode($rspta, true);
         } else {
-          $rspta = $categoria_incidencia->editar($idincidencia_categoria, $nombre_inc);
+          $rspta = $tours_turno->editar($idtours_turno, $nombre_turno);
           echo json_encode($rspta, true);
         }
       break;
 
-      case 'desactivar':
-        $rspta = $categoria_incidencia->desactivar($_GET["id_tabla"]);
+      case 'desactivar_turno':
+        $rspta = $tours_turno->desactivar($_GET["id_tabla"]);
         echo json_encode($rspta, true);
       break;
 
-      case 'eliminar':
-        $rspta = $categoria_incidencia->eliminar($_GET["id_tabla"]);
+      case 'eliminar_turno':
+        $rspta = $tours_turno->eliminar($_GET["id_tabla"]);
         echo json_encode($rspta, true);
       break;
 
-      case 'mostrar_inc':
-        $rspta = $categoria_incidencia->mostrar($idincidencia_categoria);
+      case 'mostrar_turno':
+        $rspta = $tours_turno->mostrar($idtours_turno);
         //Codificar el resultado utilizando json
         echo json_encode($rspta, true);
       break;
 
-      case 'tabla_inc_cat':
-        $rspta = $categoria_incidencia->tabla_principal_inc_categoria();
+      case 'tabla_turno':
+        $rspta = $tours_turno->tabla_principal();
         //Vamos a declarar un array
         $data = [];
         $cont = 1;
@@ -58,8 +58,8 @@ if (!isset($_SESSION["user_nombre"])) {
 
             $data[] = array(
               "0" => $cont++,
-              "1" => '<button class="btn btn-icon btn-sm btn-warning-light" onclick="mostrar_inc(' . $value['idincidencia_categoria'] . ')" data-bs-toggle="tooltip" title="Editar"><i class="ri-edit-line"></i></button>'.
-                ' <button  class="btn btn-icon btn-sm btn-danger-light product-btn" onclick="eliminar_inc(' . $value['idincidencia_categoria'] . ', \'' . encodeCadenaHtml($value['nombre']) . '\')" data-bs-toggle="tooltip" title="Eliminar"><i class="ri-delete-bin-line"></i></button>',         
+              "1" => '<button class="btn btn-icon btn-sm btn-warning-light" onclick="mostrar_turno(' . $value['idtours_turno'] . ')" data-bs-toggle="tooltip" title="Editar"><i class="ri-edit-line"></i></button>'.
+                ' <button  class="btn btn-icon btn-sm btn-danger-light product-btn" onclick="eliminar_turno(' . $value['idtours_turno'] . ', \'' . encodeCadenaHtml($value['nombre']) . '\')" data-bs-toggle="tooltip" title="Eliminar"><i class="ri-delete-bin-line"></i></button>',         
               "2" => $value['nombre'],
               "3" => ($value['estado'] == '1') ? '<span class="badge bg-success-transparent"><i class="ri-check-fill align-middle me-1"></i>Activo</span>' : '<span class="badge bg-danger-transparent"><i class="ri-close-fill align-middle me-1"></i>Desactivado</span>'
 

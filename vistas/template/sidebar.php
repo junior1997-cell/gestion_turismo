@@ -44,48 +44,42 @@
         <!-- End::slide__category -->
         
         <!-- Start::slide -->
-        <?php  if ($_SESSION['compra'] == '1') { ?>
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bx bx-home side-menu__icon"></i>
-            <span class="side-menu__label">Compras<span class="badge bg-warning-transparent ms-2">3</span></span>
-            <i class="fe fe-chevron-right side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1"> <a href="javascript:void(0)">Compras</a>  </li>
-            <?php  if ($_SESSION['proveedores'] == '1') { ?>
-            <li class="slide"> <a href="proveedores.php" class="side-menu__item">Proveedores</a> </li>
-            <?php } ?>            
-            <?php  if ($_SESSION['lista_de_compras'] == '1') { ?>
-            <li class="slide"> <a href="compras.php" class="side-menu__item">Lista de compra</a> </li>         
-            <?php } ?>
-          </ul>
-        </li>
-        <?php } ?>
-        <!-- End::slide -->
-
-        <!-- Start::slide -->
         <?php  if ($_SESSION['articulo'] == '1') { ?>
         <li class="slide has-sub">
           <a href="javascript:void(0);" class="side-menu__item">
             <i class="bx bx-home side-menu__icon"></i>
-            <span class="side-menu__label">Articulos<span class="badge bg-warning-transparent ms-2">8</span></span>
+            <span class="side-menu__label">Turismo<span class="badge bg-warning-transparent ms-2">8</span></span>
             <i class="fe fe-chevron-right side-menu__angle"></i>
           </a>
           <ul class="slide-menu child1">
-            <li class="slide side-menu__label1"> <a href="javascript:void(0)">Articulos</a></li>
+            <li class="slide side-menu__label1"> <a href="javascript:void(0)">Turismo</a></li>
             <?php  if ($_SESSION['producto'] == '1') { ?>
-            <li class="slide"> <a href="producto.php" class="side-menu__item">Producto</a></li>
+            <li class="slide"> <a href="cuidades.php" class="side-menu__item">Cuidades</a></li>
             <?php } ?>
             <?php  if ($_SESSION['servicio'] == '1') { ?>
-            <li class="slide"> <a href="servicio.php" class="side-menu__item">Servicio</a></li>
+            <li class="slide"> <a href="producto.php" class="side-menu__item">Tours</a></li>
             <?php } ?>
             <?php  if ($_SESSION['categoria_y_marca'] == '1') { ?>
-            <li class="slide"> <a href="categoria_y_marca.php" class="side-menu__item">Categoria y Marca</a></li>
+            <li class="slide"> <a href="hoteles.php" class="side-menu__item">Hoteles</a></li>
             <?php } ?>
             <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
-            <li class="slide"> <a href="unidad_medida.php" class="side-menu__item">Unidad Medida</a></li>  
-            <?php } ?>             
+            <li class="slide"> <a href="paquetes.php" class="side-menu__item">Paquetes</a></li>  
+            <?php } ?>
+            <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
+            <li class="slide"> <a href="cotizaciones.php" class="side-menu__item">Cotizaciones</a></li>  
+            <?php } ?>  
+            <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
+            <li class="slide"> <a href="agencias.php" class="side-menu__item">Agencias</a></li>  
+            <?php } ?>      
+            <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
+            <li class="slide"> <a href="transportes.php" class="side-menu__item">Transportes</a></li>  
+            <?php } ?> 
+            <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
+            <li class="slide"> <a href="guias_viaje.php" class="side-menu__item">Guias de viaje</a></li>  
+            <?php } ?>
+            <?php  if ($_SESSION['unidad_de_medida'] == '1') { ?>
+            <li class="slide"> <a href="aerolineas.php" class="side-menu__item">Aerolineas</a></li>  
+            <?php } ?>       
           </ul>
         </li>
         <?php } ?>

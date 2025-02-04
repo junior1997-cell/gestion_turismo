@@ -2,7 +2,7 @@
 //Incluímos inicialmente la conexión a la base de datos
 require "../config/Conexion_v2.php";
 
-Class Categoria_incidencia
+Class Tours_turno
 {
 	//Implementamos nuestro constructor
 	public function __construct()
@@ -10,13 +10,12 @@ Class Categoria_incidencia
 
 	}
 
-	//Implementamos un método para insertar registros
 	public function insertar($nombre ) {
-		$sql_0 = "SELECT * FROM incidencia_categoria  WHERE nombre = '$nombre';";
+		$sql_0 = "SELECT * FROM tours_turno  WHERE nombre = '$nombre';";
     $existe = ejecutarConsultaArray($sql_0); if ($existe['status'] == false) { return $existe;}
       
     if ( empty($existe['data']) ) {
-			$sql="INSERT INTO incidencia_categoria(nombre)VALUES('$nombre')";
+			$sql="INSERT INTO tours_turno(nombre)VALUES('$nombre')";
 			$insertar =  ejecutarConsulta_retornarID($sql, 'C'); if ($insertar['status'] == false) {  return $insertar; } 
 			
 			return $insertar;
@@ -35,13 +34,12 @@ Class Categoria_incidencia
 		}			
 	}
 
-	//Implementamos un método para editar registros
-	public function editar($idincidencia_categoria, $nombre, ) {
-		$sql_0 = "SELECT * FROM incidencia_categoria  WHERE nombre = '$nombre' AND idincidencia_categoria <> '$idincidencia_categoria';";
+	public function editar($idtours_turno, $nombre, ) {
+		$sql_0 = "SELECT * FROM tours_turno  WHERE nombre = '$nombre' AND idtours_turno <> '$idtours_turno';";
     $existe = ejecutarConsultaArray($sql_0); if ($existe['status'] == false) { return $existe;}
       
     if ( empty($existe['data']) ) {
-			$sql="UPDATE incidencia_categoria SET nombre='$nombre' WHERE idincidencia_categoria='$idincidencia_categoria'";
+			$sql="UPDATE tours_turno SET nombre='$nombre' WHERE idtours_turno='$idtours_turno'";
 			$editar =  ejecutarConsulta($sql, 'U');	if ( $editar['status'] == false) {return $editar; } 		
 			return $editar;
 		} else {
@@ -59,31 +57,27 @@ Class Categoria_incidencia
 		}			
 	}
 
-	//Implementamos un método para desactivar color
-	public function desactivar($idincidencia_categoria) {
-		$sql="UPDATE incidencia_categoria SET estado='0' WHERE idincidencia_categoria='$idincidencia_categoria'";
+	public function desactivar($idtours_turno) {
+		$sql="UPDATE tours_turno SET estado='0' WHERE idtours_turno='$idtours_turno'";
 		$desactivar= ejecutarConsulta($sql, 'T');
 		return $desactivar;
 	}
 
-	//Implementamos un método para eliminar incidencia_categoria
-	public function eliminar($idincidencia_categoria) {
+	public function eliminar($idtours_turno) {
 		
-		$sql="UPDATE incidencia_categoria SET estado_delete='0' WHERE idincidencia_categoria='$idincidencia_categoria'";
+		$sql="UPDATE tours_turno SET estado_delete='0' WHERE idtours_turno='$idtours_turno'";
 		$eliminar =  ejecutarConsulta($sql, 'D');	if ( $eliminar['status'] == false) {return $eliminar; }  
 
 		return $eliminar;
 	}
 
-	//Implementar un método para mostrar los datos de un registro a modificar
-	public function mostrar($idincidencia_categoria) {
-		$sql="SELECT * FROM incidencia_categoria WHERE idincidencia_categoria='$idincidencia_categoria'";
+	public function mostrar($idtours_turno) {
+		$sql="SELECT * FROM tours_turno WHERE idtours_turno='$idtours_turno'";
 		return ejecutarConsultaSimpleFila($sql);
 	}
 
-	//Implementar un método para listar los registros
-	public function tabla_principal_inc_categoria() {
-		$sql="SELECT * FROM incidencia_categoria WHERE estado=1  AND estado_delete=1 ORDER BY nombre ASC";
+	public function tabla_principal() {
+		$sql="SELECT * FROM tours_turno WHERE estado=1  AND estado_delete=1 ORDER BY nombre ASC";
 		return ejecutarConsulta($sql);		
 	}
 

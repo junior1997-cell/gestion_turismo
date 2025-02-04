@@ -57,104 +57,6 @@ if (!isset($_SESSION["user_nombre"])) {
                   <div class="tab-pane fade show active" id="dato-cliente-pane" role="tabpanel" tabindex="0">
                     <div class="row">
 
-                      <!-- :::::::::::::::: P L A N E S :::::::::::::::: -->
-                      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
-                        <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
-                          <div>
-                            <div class="d-md-flex d-block align-items-center ">
-                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_form();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-plan"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
-                              <div>
-                                <p class="fw-semibold fs-18 mb-0">Planes</p>
-                                <span class="fs-semibold text-muted">Administra los planes de manera eficiente.</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="btn-list mt-md-0 mt-2">
-                            <nav>
-                              <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Planes</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Home</li>
-                              </ol>
-                            </nav>
-                          </div>
-                        </div>
-                        <div class="card custom-card">
-                          <div class="card-body table-responsive">
-                            <table id="tabla-plan" class="table table-bordered w-100" style="width: 100%;">
-                              <thead>
-                                <tr>
-                                  <th class="text-center">#</th>
-                                  <th class="text-center">Acciones</th>
-                                  <th>Descripción</th>
-                                  <th>Costo</th>
-                                  <th class="text-center">Estado</th>
-                                </tr>
-                              </thead>
-                              <tbody></tbody>
-                              <tfoot>
-                                <tr>
-                                  <th class="text-center">#</th>
-                                  <th class="text-center">Acciones</th>
-                                  <th>Descripción</th>
-                                  <th>Costo</th>
-                                  <th class="text-center">Estado</th>
-                                </tr>
-                              </tfoot>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- :::::::::::::::: Z O N A :::::::::::::::: -->
-                      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
-                        <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
-                          <div>
-                            <div class="d-md-flex d-block align-items-center ">
-                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_zona();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-zona"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
-                              <div>
-                                <p class="fw-semibold fs-18 mb-0"><b>Zonas</b></p>
-                                <span class="fs-semibold text-muted">Administra de manera eficiente las zonas.</span>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="btn-list mt-md-0 mt-2">
-                            <nav>
-                              <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Zonas</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Home</li>
-                              </ol>
-                            </nav>
-                          </div>
-                        </div>
-                        <div class="card custom-card">
-                          <div class="card-body table-responsive">
-                            <table id="tabla-zona" class="table table-bordered w-100" style="width: 100%;">
-                              <thead>
-                                <tr>
-                                  <th class="text-center">#</th>
-                                  <th class="text-center">Acciones</th>
-                                  <th>Descripción</th>
-                                  <th>Ip Zona</th>
-                                  <th class="text-center">Estado</th>
-                                </tr>
-                              </thead>
-                              <tbody></tbody>
-                              <tfoot>
-                                <tr>
-                                  <th class="text-center">#</th>
-                                  <th class="text-center">Acciones</th>
-                                  <th>Descripción</th>
-                                  <th>Ip Zona</th>
-                                  <th class="text-center">Estado</th>
-                                </tr>
-                              </tfoot>
-                            </table>
-                          </div>
-                        </div>
-                      </div>
-
                       <!-- :::::::::::::::: C E N T R O    P O B L A D O :::::::::::::::: -->
                       <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
                         <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
@@ -318,15 +220,15 @@ if (!isset($_SESSION["user_nombre"])) {
                           </div>
                         </div>
                       </div>
-                      <!-- :::::::::::::::: C A T   I N C I D E N C I A S :::::::::::::::: -->
+                      <!-- :::::::::::::::: C A T   TURNOS TOURS :::::::::::::::: -->
                       <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
                         <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
                           <div>
                             <div class="d-md-flex d-block align-items-center ">
-                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_form_cat_inc();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-cat-inc"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
+                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_form_turno();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-turno"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
                               <div>
-                                <p class="fw-semibold fs-18 mb-0">Categorías Incidencias</p>
-                                <span class="fs-semibold text-muted">Administra de manera eficiente tus Categorias de incidencias.</span>
+                                <p class="fw-semibold fs-18 mb-0">Turnos</p>
+                                <span class="fs-semibold text-muted">Administra de manera eficiente tus Turnos de Tuors.</span>
                               </div>
                             </div>
                           </div>
@@ -334,7 +236,7 @@ if (!isset($_SESSION["user_nombre"])) {
                           <div class="btn-list mt-md-0 mt-2">
                             <nav>
                               <ol class="breadcrumb mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Categorías</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">General</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Home</li>
                               </ol>
                             </nav>
@@ -342,7 +244,7 @@ if (!isset($_SESSION["user_nombre"])) {
                         </div>
                         <div class="card custom-card">
                           <div class="card-body table-responsive">
-                            <table id="tabla-inc" class="table table-bordered w-100" style="width: 100%;">
+                            <table id="tabla-turno" class="table table-bordered w-100" style="width: 100%;">
                               <thead>
                                 <tr>
                                   <th class="text-center">#</th>
@@ -412,6 +314,106 @@ if (!isset($_SESSION["user_nombre"])) {
                           </div>
                         </div>
                       </div>
+
+
+                      <!-- :::::::::::::::: P L A N E S :::::::::::::::: -->
+                      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
+                        <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
+                          <div>
+                            <div class="d-md-flex d-block align-items-center ">
+                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_form();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-plan"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
+                              <div>
+                                <p class="fw-semibold fs-18 mb-0">Planes</p>
+                                <span class="fs-semibold text-muted">Administra los planes de manera eficiente.</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="btn-list mt-md-0 mt-2">
+                            <nav>
+                              <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Planes</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                              </ol>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="card custom-card">
+                          <div class="card-body table-responsive">
+                            <table id="tabla-plan" class="table table-bordered w-100" style="width: 100%;">
+                              <thead>
+                                <tr>
+                                  <th class="text-center">#</th>
+                                  <th class="text-center">Acciones</th>
+                                  <th>Descripción</th>
+                                  <th>Costo</th>
+                                  <th class="text-center">Estado</th>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                              <tfoot>
+                                <tr>
+                                  <th class="text-center">#</th>
+                                  <th class="text-center">Acciones</th>
+                                  <th>Descripción</th>
+                                  <th>Costo</th>
+                                  <th class="text-center">Estado</th>
+                                </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- :::::::::::::::: Z O N A :::::::::::::::: -->
+                      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-6 col-xxl-6">
+                        <div class="d-md-flex d-block align-items-center justify-content-between mb-4 mt-2 page-header-breadcrumb">
+                          <div>
+                            <div class="d-md-flex d-block align-items-center ">
+                              <button class="btn-modal-effect btn btn-primary label-btn m-r-10px" onclick="limpiar_zona();" data-bs-effect="effect-super-scaled" data-bs-toggle="modal" data-bs-target="#modal-agregar-zona"> <i class="ri-user-add-line label-btn-icon me-2"></i>Agregar </button>
+                              <div>
+                                <p class="fw-semibold fs-18 mb-0"><b>Zonas</b></p>
+                                <span class="fs-semibold text-muted">Administra de manera eficiente las zonas.</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="btn-list mt-md-0 mt-2">
+                            <nav>
+                              <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Zonas</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                              </ol>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="card custom-card">
+                          <div class="card-body table-responsive">
+                            <table id="tabla-zona" class="table table-bordered w-100" style="width: 100%;">
+                              <thead>
+                                <tr>
+                                  <th class="text-center">#</th>
+                                  <th class="text-center">Acciones</th>
+                                  <th>Descripción</th>
+                                  <th>Ip Zona</th>
+                                  <th class="text-center">Estado</th>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                              <tfoot>
+                                <tr>
+                                  <th class="text-center">#</th>
+                                  <th class="text-center">Acciones</th>
+                                  <th>Descripción</th>
+                                  <th>Ip Zona</th>
+                                  <th class="text-center">Estado</th>
+                                </tr>
+                              </tfoot>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -705,8 +707,8 @@ if (!isset($_SESSION["user_nombre"])) {
             </div>
             <!-- End::modal-registrar-cargo-trabajador -->
 
-            <!-- MODAL:: CATEGORIA INCIDENCIA - charge 11 -->
-            <div class="modal fade modal-effect" id="modal-agregar-cat-inc" role="dialog" tabindex="-1" aria-labelledby="modal-agregar-cat-tLabel" aria-hidden="true">
+            <!-- MODAL:: Turnos Tours - charge 11 -->
+            <div class="modal fade modal-effect" id="modal-agregar-turno" role="dialog" tabindex="-1" aria-labelledby="modal-agregar-cat-tLabel" aria-hidden="true">
               <div class="modal-dialog modal-md modal-dialog-scrollabel">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -714,14 +716,14 @@ if (!isset($_SESSION["user_nombre"])) {
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <form name="form-agregar-inc" id="form-agregar-inc" method="POST" class="row needs-validation" novalidate>
+                    <form name="form-agregar-turno" id="form-agregar-turno" method="POST" class="row needs-validation" novalidate>
                       <div class="row gy-2" id="cargando-11-fomulario">
-                        <input type="hidden" name="idincidencia_categoria" id="idincidencia_categoria">
+                        <input type="hidden" name="idtours_turno" id="idtours_turno">
 
                         <div class="col-md-12">
                           <div class="form-label">
                             <label for="nombre_plan" class="form-label">Nombre:</label>
-                            <input class="form-control" name="nombre_inc" id="nombre_inc" onkeyup="mayus(this);" />
+                            <input class="form-control" name="nombre_turno" id="nombre_turno" onkeyup="mayus(this);" />
                           </div>
                         </div>
                       </div>
@@ -731,17 +733,17 @@ if (!isset($_SESSION["user_nombre"])) {
                           <h4 class="bx-flashing">Cargando...</h4>
                         </div>
                       </div>
-                      <button type="submit" style="display: none;" id="submit-form-inc">Submit</button>
+                      <button type="submit" style="display: none;" id="submit-form-turno">Submit</button>
                     </form>
                   </div>
                   <div class="modal-footer justify-content-between">
-                    <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal" onclick="limpiar_form_cat_inc();"><i class="las la-times"></i> Close</button>
-                    <button type="button" class="btn btn-sm btn-primary" id="guardar_registro_inc"><i class="bx bx-save bx-tada"></i> Guardar</button>
+                    <button type="button" class="btn btn-sm btn-danger" data-bs-dismiss="modal" onclick="limpiar_form_turno();"><i class="las la-times"></i> Close</button>
+                    <button type="button" class="btn btn-sm btn-primary" id="guardar_registro_turno"><i class="bx bx-save bx-tada"></i> Guardar</button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- End::modal-categoria_incidencia -->
+            <!-- End:: Turnos Tours -->
 
             <!-- MODAL:: CATEGORIA OTROS GASTOS - charge 13 -->
             <div class="modal fade modal-effect" id="modal-agregar-categoria-otros-gastos" role="dialog" tabindex="-1" aria-labelledby="modal-agregar-categoria-otros-gastosLabel" aria-hidden="true">
@@ -765,7 +767,7 @@ if (!isset($_SESSION["user_nombre"])) {
                         <div class="col-md-12">
                           <div class="form-label">
                             <label for="descripcion_categoria_otros_gastos" class="form-label">Descripcion:</label>
-                            <textarea  class="form-control" name="descripcion_categoria_otros_gastos" id="descripcion_categoria_otros_gastos"></textarea>
+                            <textarea class="form-control" name="descripcion_categoria_otros_gastos" id="descripcion_categoria_otros_gastos"></textarea>
                           </div>
                         </div>
                       </div>
@@ -810,7 +812,7 @@ if (!isset($_SESSION["user_nombre"])) {
     <script src="scripts/centro_poblado.js?version_jdl=1.39"></script>
     <script src="scripts/bancos.js?version_jdl=1.39"></script>
     <script src="scripts/cargo_trabajador.js?version_jdl=1.39"></script>
-    <script src="scripts/categoria_incidencia.js?version_jdl=1.39"></script>
+    <script src="scripts/tours_turno.js?version_jdl=1.39"></script>
     <script src="scripts/categoria_otros_gastos.js?version_jdl=1.39"></script>
 
 
