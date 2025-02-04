@@ -181,7 +181,7 @@ class Usuario
 
 	//Implementar un metodo para listar los permisos marcados
 	public function listarmarcados($idusuario)	{		
-		$sql = "SELECT p.file_name_php, p.submodulo, up.* from usuario_permiso as up
+		$sql = "SELECT p.submodulo, up.* from usuario_permiso as up
 		inner join permiso as p on p.idpermiso = up.idpermiso
 		where idusuario='$idusuario'";
 		return ejecutarConsultaArray($sql); 		

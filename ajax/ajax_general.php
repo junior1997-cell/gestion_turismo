@@ -18,7 +18,7 @@ if (!isset($_SESSION["user_nombre"])) {
   $ajax_general = new Ajax_general($_SESSION['idusuario']);
   $_ubigeo       = new Ubigeo();
 
-  $scheme_host  =  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/brartnet/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/');
+  $scheme_host  =  ($_SERVER['HTTP_HOST'] == 'localhost' ? 'http://localhost/gestion_turismo/' :  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/');
   $imagen_error = "this.src='../dist/svg/404-v2.svg'";
   $toltip       = '<script> $(function () { $(\'[data-bs-toggle="tooltip"]\').tooltip(); }); </script>';
 

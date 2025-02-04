@@ -17,21 +17,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Language" content="es">
 
-  <title> Inicio | Corporación Brartnet </title>
+  <title> Inicio | TurnEZ </title>
 
   <meta name="description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
-  <meta name="keywords" content="brartnet, tocache, internet tocache, internet, proveedor de internet, servicios de internet, alta velocidad, conexiones de internet, internet en Perú">
-  <meta name="author" content="Corporación Brartnet">
+  <meta name="keywords" content="TurnEZ, tocache, internet tocache, internet, proveedor de internet, servicios de internet, alta velocidad, conexiones de internet, internet en Perú">
+  <meta name="author" content="TurnEZ">
   <meta name="robots" content="index, follow">
   <!-- FACEBOOK -->
-  <meta property="og:title" content="Corporación Brartnet - Proveedor de Servicios de Internet en Perú">
+  <meta property="og:title" content="TurnEZ - Proveedor de Servicios de Internet en Perú">
   <meta property="og:description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
   <meta property="og:image" content="assets/images/brand-logos/desktop-white.png">
-  <meta property="og:url" content="https://corporacionbrartnet.jdl.pe">
+  <meta property="og:url" content="">
   <!-- TWITTER -->
   <!-- <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@nombre_de_usuario_de_twitter"> -->
-  <meta name="twitter:title" content="Corporación Brartnet">
+  <meta name="twitter:title" content="TurnEZ">
   <meta name="twitter:description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
   <meta name="twitter:image" content="assets/images/brand-logos/desktop-white.png">
 
@@ -39,13 +39,13 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "name": "Corporación Brartnet",
-      "url": "https://corporacionbrartnet.jdl.pe",
+      "name": "TurnEZ",
+      "url": "#",
       "description": "Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!"
     }
   </script>
 
-  <link rel="canonical" href="https://corporacionbrartnet.jdl.pe">
+  <link rel="canonical" href="#">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/images/brand-logos/ico-brartnet.svg" >
@@ -375,8 +375,8 @@
                   <div class="mb-3">
                     <h5 class="fw-semibold text-fixed-white op-9">Únete a nosotros ahora</h5>
                   </div>
-                  <p class="landing-banner-heading mb-3">Conexión rápida, navegación sin límites. <span class="text-secondary">Brartnet !</span></p>
-                  <div class="fs-16 mb-5 text-fixed-white op-7">Brartnet - Conéctate con el mundo sin límites, con nuestra velocidad y fiabilidad. ¡Descubre un nuevo nivel de navegación con nosotros!</div>
+                  <p class="landing-banner-heading mb-3">Conexión rápida, navegación sin límites. <span class="text-secondary">TurnEZ !</span></p>
+                  <div class="fs-16 mb-5 text-fixed-white op-7">TurnEZ - Conéctate con el mundo sin límites, con nuestra velocidad y fiabilidad. ¡Descubre un nuevo nivel de navegación con nosotros!</div>
                   <a href="https://api.whatsapp.com/send?phone=+51929676935&text=*Hola buenos dias, vengo de tu pagina web!!*" class="m-1 btn btn-primary">
                     Contáctanos <i class="ti ti-brand-whatsapp ms-2 align-middle"></i>
                   </a>
@@ -664,7 +664,7 @@
                   <span class="avatar avatar-xxl avatar-rounded mb-3 team-avatar">
                     <img src="assets/images/brand-logos/logo-short.png" alt="">
                   </span>
-                  <p class="fw-semibold fs-17 mb-0 text-default">Corporacion Brartnet</p>
+                  <p class="fw-semibold fs-17 mb-0 text-default">TurnEZ</p>
                   <span class="text-muted fs-14 text-primary fw-semibold">Empresa</span>
                   <p class="text-muted text-justify mt-2 fs-13">
                     Queremos conocer sus necesidades y optimizar su experiencia con nuestros servicios de internet. Nuestro equipo está listo para ofrecer soluciones personalizadas.                  </p>
@@ -935,7 +935,7 @@
 
       <div class="text-center landing-main-footer py-3">
         <span class="text-muted fs-15"> Copyright © <span id="year"></span>
-          <a href="javascript:void(0);" class="text-primary fw-semibold"><u>Corporació  n Brarnet SAC</u></a>.
+          <a href="javascript:void(0);" class="text-primary fw-semibold"><u>Tu plataforma de gestión turística</u></a>.
            Diseñado por <span class="fa fa-heart text-danger"></span>  <a href="javascript:void(0);" class="text-primary fw-semibold">
             <u> JDL Tecnology</u>
           </a> Todos los derechos reservados.

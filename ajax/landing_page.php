@@ -140,7 +140,7 @@ if (!isset($_SESSION["user_nombre"])) {
                      (($value['landing_estado'] == '1') ? '</i> <i class="fe fe-eye" data-bs-toggle="tooltip" title="Visible"></i>' : '</i> <i class="fe fe-eye-off" data-bs-toggle="tooltip" title="Oculto"></i>') .
                      '</button>',         
               "2" => '<div class="d-flex flex-fill align-items-center">
-              <div class="me-2 cursor-pointer" data-bs-toggle="tooltip" title="Brartnet">
+              <div class="me-2 cursor-pointer" data-bs-toggle="tooltip" title="TurnEZ">
                 <span class="avatar"> <img src="../assets/images/brand-logos/logo-short.png" alt=""> </span>
               </div>
               <div>

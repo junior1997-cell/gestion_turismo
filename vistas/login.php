@@ -9,21 +9,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Language" content="es">
 
-  <title> Inicio | Corporación Brartnet </title>
+  <title> Inicio | TurnEZ </title>
 
   <meta name="description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
-  <meta name="keywords" content="brartnet, tocache, internet tocache, internet, proveedor de internet, servicios de internet, alta velocidad, conexiones de internet, internet en Perú">
-  <meta name="author" content="Corporación Brartnet">  
+  <meta name="keywords" content="TurnEZ , tocache, internet tocache, internet, proveedor de internet, servicios de internet, alta velocidad, conexiones de internet, internet en Perú">
+  <meta name="author" content="TurnEZ">  
   <meta name="robots" content="index, follow">
   <!-- FACEBOOK -->
-  <meta property="og:title" content="Corporación Brartnet - Proveedor de Servicios de Internet en Perú">
+  <meta property="og:title" content="TurnEZ - Proveedor de Servicios de Internet en Perú">
   <meta property="og:description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
   <meta property="og:image" content="assets/images/brand-logos/desktop-white.png">
-  <meta property="og:url" content="https://corporacionbrartnet.jdl.pe">
+  <meta property="og:url" content="#">
   <!-- TWITTER -->
   <!-- <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@nombre_de_usuario_de_twitter"> -->
-  <meta name="twitter:title" content="Corporación Brartnet">
+  <meta name="twitter:title" content=" TurnEZ">
   <meta name="twitter:description" content="Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!">
   <meta name="twitter:image" content="assets/images/brand-logos/desktop-white.png">
 
@@ -31,16 +31,16 @@
     {
       "@context": "http://schema.org",
       "@type": "Organization",
-      "name": "Corporación Brartnet",
-      "url": "https://corporacionbrartnet.jdl.pe",
+      "name": " TurnEZ",
+      "url": "#",
       "description": "Proveedor de servicios de internet de alta velocidad en Perú. Ofrecemos conexiones rápidas y confiables para hogares y empresas. ¡Contáctanos para obtener más información!"
     }
   </script>
 
-  <link rel="canonical" href="https://corporacionbrartnet.jdl.pe">
+  <link rel="canonical" href="#">
 
   <!-- Favicon -->
-  <link rel="icon" href="../assets/images/brand-logos/ico-brartnet.svg" type="image/x-icon">
+  <link rel="icon" href="../assets/images/brand-logos/ico-bartnet.svg" type="image/x-icon">
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
   <!-- CSS Implementing Plugins -->
@@ -93,7 +93,7 @@
               <!-- Info -->
               <div class="mt-5 mb-7">
                 <h1 class="display-4 text-white mb-3">Bienvenido de nuevo</h1>
-                <p class="lead text-white">Inicie sesión para administrar su página web.</p>
+                <p class="lead text-white">Inicie sesión para administrar tu plataforma de gestión turística.</p>
               </div>
               <!-- End Info -->
 
@@ -123,7 +123,7 @@
         <!-- End Content -->
 
         <!-- Clients Section -->
-        <div class="position-absolute bottom-0 right-0 left-0">
+        <div class="position-absolute bottom-0 right-0 left-0" style="display: none;">
           <div class="container-fluid py-5">
             <div class="js-slick-carousel slick"
                  data-hs-slick-carousel-options='{
