@@ -375,8 +375,8 @@
                   <div class="mb-3">
                     <h5 class="fw-semibold text-fixed-white op-9">Únete a nosotros ahora</h5>
                   </div>
-                  <p class="landing-banner-heading mb-3">Conexión rápida, navegación sin límites. <span class="text-secondary">TurnEZ !</span></p>
-                  <div class="fs-16 mb-5 text-fixed-white op-7">TurnEZ - Conéctate con el mundo sin límites, con nuestra velocidad y fiabilidad. ¡Descubre un nuevo nivel de navegación con nosotros!</div>
+                  <p class="landing-banner-heading mb-3">Tu gestión turística con tecnología. <span class="text-secondary">TurnEZ !</span></p>
+                  <div class="fs-16 mb-5 text-fixed-white op-7">TurnEZ -  Tu aliado en la gestión turística y la facturación!</div>
                   <a href="https://api.whatsapp.com/send?phone=+51929676935&text=*Hola buenos dias, vengo de tu pagina web!!*" class="m-1 btn btn-primary">
                     Contáctanos <i class="ti ti-brand-whatsapp ms-2 align-middle"></i>
                   </a>

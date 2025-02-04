@@ -531,10 +531,10 @@ function ver_errores(e) {
     }).then((result) => {
       if (result.isConfirmed) {
         Swal.fire('Saliendo...', '<i class="fas fa-spinner fa-pulse"></i> Redireccionando...', 'success');
-        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/brartnet/`:window.location.origin}`;
+        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/gestion_turismo/`:window.location.origin}`;
       } else {
         Swal.fire('Cerrando sesion', '<i class="fas fa-spinner fa-pulse"></i> De igual manera vamos a cerrar la sesión, jijijiji...', 'success');
-        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/brartnet/`:window.location.origin}`;
+        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/gestion_turismo/`:window.location.origin}`;
       }
     });
 
@@ -562,9 +562,9 @@ function ver_errores(e) {
       cancelButtonAriaLabel: 'Thumbs down'
     }).then((result) => {
       if (result.isConfirmed) {        
-        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/brartnet/vistas/escritorio.php`:window.location.origin+'/vistas/escritorio.php'}`;
+        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/gestion_turismo/vistas/escritorio.php`:window.location.origin+'/vistas/escritorio.php'}`;
       } else {
-        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/brartnet/vistas/escritorio.php`:window.location.origin+'/vistas/escritorio.php'}`;
+        window.location.href = `${window.location.host =='localhost' || es_numero(parseFloat(window.location.host)) == true ?`${window.location.origin}/gestion_turismo/vistas/escritorio.php`:window.location.origin+'/vistas/escritorio.php'}`;
       }
     });
   
