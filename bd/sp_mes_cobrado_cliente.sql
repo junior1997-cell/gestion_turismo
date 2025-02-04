@@ -2,8 +2,7 @@ CREATE PROCEDURE `sp_mes_cobrado_cliente` (
   IN idcliente INT
 )
 BEGIN
-
-  SELECT CASE WHEN lvd.idventa IS NULL THEN  'DEUDA' ELSE  'NO DEUDA' END as estado_pagado, 
+SELECT CASE WHEN lvd.idventa IS NULL THEN  'DEUDA' ELSE  'NO DEUDA' END as estado_pagado, 
   mes_c.*, fn_capitalize_texto(mes_c.name_month) as nombre_mes_capitalize,  fn_capitalize_texto(SUBSTRING( mes_c.name_month , 1, 3)) as nombre_mes_recortado, lvd.idventa, lvd.idventa_detalle, 
   CASE WHEN lvd.fecha_emision_format IS NOT NULL THEN lvd.fecha_emision_format ELSE  '' END as fecha_emision_format, lvd.subtotal, lvd.tipo, lvd.pr_nombre, lvd.tipo_comprobante, lvd.serie_comprobante, lvd.numero_comprobante, lvd.tipo_comprobante_v2,
   CASE WHEN lvd.tecnico_cobro IS NOT NULL THEN  lvd.tecnico_cobro ELSE  'NO PAGO' END as tecnico_cobro, lvd.foto_perfil_tecnico_cobro

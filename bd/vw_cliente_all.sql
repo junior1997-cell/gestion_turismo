@@ -1,3 +1,5 @@
+CREATE VIEW `vw_cliente_all` AS
+
 SELECT
 	-- ::::::::::::::: DATOS CLIENTE ::::::::::::::: 
 	per.idpersona_cliente_v2,	per.idpersona_cliente, per.ip_personal,	per.dia_cancelacion, per.dia_cancelacion_v2, per.fecha_cancelacion, per.fecha_cancelacion_format, 

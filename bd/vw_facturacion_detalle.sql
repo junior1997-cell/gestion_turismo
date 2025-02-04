@@ -1,3 +1,4 @@
+CREATE VIEW `vw_facturacion_detalle` AS
 
 SELECT 
 -- Datos venta cabecera

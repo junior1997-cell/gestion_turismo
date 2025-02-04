@@ -1,3 +1,4 @@
+CREATE VIEW `vw_retraso_cobro_cliente` AS
 SELECT
   pco.idpersona_cliente_v2, pco.idpersona, pco.idpersona_cliente, pco.cliente_nombre_completo, pco.dia_cancelacion, pco.fecha_cancelacion,
   CONCAT( YEAR(pco.primera_venta), '-',  UPPER( LEFT(MONTHNAME(pco.primera_venta), 1) ), SUBSTR(MONTHNAME(pco.primera_venta), 2) ) AS mes_inicio,

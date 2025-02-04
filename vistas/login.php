@@ -79,7 +79,7 @@
       <div class="js-video-bg d-none d-md-block position-absolute w-100 h-100"
            data-hs-video-bg-options='{
              "type": "you-tube",
-             "videoId": "qZJWzNT39Ig",
+             "videoId": "BoB0QnUbCj0",
              "ratio": 0.65
            }'>
       </div>
