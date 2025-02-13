@@ -80,7 +80,7 @@ if (!isset($_SESSION["user_nombre"])) {
         $file_nombre_old = [];                        // Amacenar los nombres de los documentos             
         $file_size = [];                        // Amacenar los nombres de los documentos             
         
-        $comprobantes = $_POST["f_mp_comprobante"]; // Recibe el array de archivos
+        $comprobantes = json_decode($_POST["f_mp_comprobante"], true);// Recibe el array de archivos
         $resultados = [];                           // Almacenar resultados para cada archivo       
         ksort($comprobantes);                       // Reorganizar el orden de indices
         //echo json_encode($comprobantes, true); die();

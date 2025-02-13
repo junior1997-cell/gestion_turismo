@@ -332,8 +332,8 @@ if (!isset($_SESSION["user_nombre"])) {
     break;
 
     // ══════════════════════════════════════ P R O D U C T O  ══════════════════════════════════════
-    case 'create_code_producto' :
-      $rspta = $ajax_general->create_code_producto($_GET["pre_codigo"]);
+    case 'create_code_tours' :
+      $rspta = $ajax_general->create_code_tours($_GET["pre_codigo"]);
       echo json_encode($rspta, true);
     break;
 

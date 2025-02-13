@@ -171,10 +171,10 @@ Class Ajax_general
 
   // ══════════════════════════════════════ P R O D U C T O  ══════════════════════════════════════
 
-  public function create_code_producto($pre_codigo)	{
+  public function create_code_tours($pre_codigo)	{
     
 		// Consulta para obtener el último código que comienza con 'PR' de la tabla: where codigo like 'PR%'
-    $sql = "SELECT max(idproducto) as last_code from producto";
+    $sql = "SELECT max(idtours) as last_code from tours";
     $result = ejecutarConsultaSimpleFila($sql);
     
     $last_code = $result['data']['last_code'];

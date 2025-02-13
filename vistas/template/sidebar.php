@@ -57,7 +57,7 @@
             <li class="slide"> <a href="cuidades.php" class="side-menu__item">Cuidades</a></li>
             <?php } ?>
             <?php  if ($_SESSION['servicio'] == '1') { ?>
-            <li class="slide"> <a href="producto.php" class="side-menu__item">Tours</a></li>
+            <li class="slide"> <a href="tours.php" class="side-menu__item">Tours</a></li>
             <?php } ?>
             <?php  if ($_SESSION['categoria_y_marca'] == '1') { ?>
             <li class="slide"> <a href="hoteles.php" class="side-menu__item">Hoteles</a></li>
